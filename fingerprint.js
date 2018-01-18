@@ -1,5 +1,5 @@
 (function () {
-  var isPublitext = false;
+  var isPublicText = false;
   var publicDomains = [
     'imperdiblesoft',
     'material-css.com',
@@ -12,16 +12,16 @@
 
   for (var y in publicDomains) {
     if (location.href.indexOf(publicDomains[y]) >= 0) {
-      isPublitext = true;
+      isPublicText = true;
       break;
     }
   }
   
-  if (isPublic) {
+  if (isPublicText) {
     var opacity = 0.4;
     var width = '30px';
     var url = 'https://www.imperdiblesoft.com';
-    render(width, opacity, u);
+    render(width, opacity, url);
 
   } else {
     var text = '';
