@@ -1,13 +1,13 @@
 (function () {
   var isPublitext = false;
   var publicDomains = [
-    "imperdiblesoft",
-    "quiromed.com.ar",
-    "quiro-med.com.ar",
-    "mypetcard.com.ar",
-    "material-css.com",
-    "my-teamup.com",
-    "dubrovnikaparts.com.ar"
+    'imperdiblesoft',
+    'material-css.com',
+    'virtuamanagement.com',
+    'my-teamup.com',
+    'mypetcard.com.ar',
+
+    'dubrovnikaparts.com.ar'
   ];
 
   for (var y in publicDomains) {
@@ -19,134 +19,134 @@
   
   if (isPublic) {
     var opacity = 0.4;
-    var width = "30px";
-    var url = "https://www.imperdiblesoft.com";
+    var width = '30px';
+    var url = 'https://www.imperdiblesoft.com';
     render(width, opacity, u);
 
   } else {
-    var text = "";
+    var text = '';
 
-    document.addEventListener("keyup", function (e) {
+    document.addEventListener('keyup', function (e) {
       switch (c) {
-        case "":
+        case '':
           if (e.keyCode == 73) {
-            text = "i";
+            text = 'i';
           } else {
-            text = "";
+            text = '';
           }
           break;
 
-        case "i":
+        case 'i':
           if (e.keyCode == 77) {
-            text = "im";
+            text = 'im';
           } else {
-            text = "";
+            text = '';
           }
           break;
 
-        case "im":
+        case 'im':
           if (e.keyCode == 80) {
-            text = "imp";
+            text = 'imp';
           } else {
-            text = "";
+            text = '';
           }
           break;
 
-        case "imp":
+        case 'imp':
           if (e.keyCode == 69) {
-            text = "impe";
+            text = 'impe';
           } else {
-            text = "";
+            text = '';
           }
           break;
 
-        case "impe":
+        case 'impe':
           if (e.keyCode == 82) {
-            text = "imper";
+            text = 'imper';
           } else {
-            text = "";
+            text = '';
           }
           break;
 
-        case "imper":
+        case 'imper':
           if (e.keyCode == 68) {
-            text = "imperd";
+            text = 'imperd';
           } else {
-            text = "";
+            text = '';
           }
           break;
 
-        case "imperd":
+        case 'imperd':
           if (e.keyCode == 73) {
-            text = "imperdi";
+            text = 'imperdi';
           } else {
-            text = "";
+            text = '';
           }
           break;
 
-        case "imperdi":
+        case 'imperdi':
           if (e.keyCode == 66) {
-            text = "imperdib";
+            text = 'imperdib';
           } else {
-            text = "";
+            text = '';
           }
           break;
 
-        case "imperdib":
+        case 'imperdib':
           if (e.keyCode == 76) {
-            text = "imperdibl";
+            text = 'imperdibl';
           } else {
-            text = "";
+            text = '';
           }
           break;
 
-        case "imperdibl":
+        case 'imperdibl':
           if (e.keyCode == 69) {
-            text = "imperdible";
+            text = 'imperdible';
           } else {
-            text = "";
+            text = '';
           }
           break;
 
-        case "imperdible":
+        case 'imperdible':
           if (e.keyCode == 83) {
-            text = "imperdibles";
+            text = 'imperdibles';
           } else {
-            text = "";
+            text = '';
           }
           break;
 
-        case "imperdibles":
+        case 'imperdibles':
           if (e.keyCode == 79) {
-            text = "imperdibleso";
+            text = 'imperdibleso';
           } else {
-            text = "";
+            text = '';
           }
           break;
 
-        case "imperdibleso":
+        case 'imperdibleso':
           if (e.keyCode == 70) {
-            text = "imperdiblesof";
+            text = 'imperdiblesof';
           } else {
-            text = "";
+            text = '';
           }
           break;
 
-        case "imperdiblesof":
+        case 'imperdiblesof':
           if (e.keyCode == 84) {
-            text = "imperdiblesoft";
+            text = 'imperdiblesoft';
           } else {
-            text = "";
+            text = '';
           }
           break;
 
       }
       
-      if (c == "imperdiblesoft") {
-        text = "";
+      if (c == 'imperdiblesoft') {
+        text = '';
         var opacity = 0;
-        var width = "0px";
-        var url = "https://www.imperdiblesoft.com";
+        var width = '0px';
+        var url = 'https://www.imperdiblesoft.com';
         render(width, opacity, url);
       }
     });
@@ -160,41 +160,73 @@
   */
   function render(width, opacity, url) {
     // Prepeare the wrapper
-    $("body").append("<div id='impWrapper' style='display: none;' class='sop - invisible'></div>");
+    $('body').append("<div id='impWrapper' style='display: none;' class='sop-invisible'></div>");
 
     // Add the logo
-    $("#impWrapper").append("<img id='impLogo' style='display: none;' src='" + u + " / images / logo.png' />");
+    $('#impWrapper').append("<img id='impLogo' style='display: none;' src='" + url + "/images/logo.png' />");
 
     // Add the logotype
-    $("#impWrapper").append("<img id='impLogotype' style='display: none;' src='" + u + " / images / text_logo.png' title='Developed by ImperdibleSoft' />");
+    $('#impWrapper').append("<img id='impLogotype' style='display: none;' src='" + url + "/images/text_logo.png' title='Developed by ImperdibleSoft' />");
 
     // Apply custom CSS to the wrapper
-    $("#impWrapper").css({ "position": "fixed", "display": "block", "float": "left", "bottom": "0px", "top": "initial", "z-index": "99999", "border-radius": "0px 5px 0px 0px", "-moz-border-radius": "0px 5px 0px 0px", "-webkit-border-radius": "0px 5px 0px 0px", "box-sizing": "content-box", "cursor": "pointer" });
+    $('#impWrapper').css({
+      'position': 'fixed',
+      'display': 'block',
+      'float': 'left',
+      'bottom': '0px',
+      'top': 'initial',
+      'z-index': '99999',
+      'border-radius': '0px 5px 0px 0px',
+      '-moz-border-radius': '0px 5px 0px 0px',
+      '-webkit-border-radius': '0px 5px 0px 0px',
+      'box-sizing': 'content-box',
+      'cursor': 'pointer'
+    });
 
     // Apply custom CSS to the logo
-    $("#impLogo").css({ "position": "relative", "display": "block", "float": "left", "width": w, "padding": "8px", "padding-left": "10px", "box-sizing": "content-box", "cursor": "pointer", "opacity": o, "-webkit-filter": "grayscale(100%)", "filter": "grayscale(100%)" });
+    $('#impLogo').css({
+      'position': 'relative',
+      'display': 'block',
+      'float': 'left',
+      'width': width,
+      'padding': '8px',
+      'padding-left': '10px',
+      'box-sizing': 'content-box',
+      'cursor': 'pointer',
+      'opacity': opacity,
+      '-webkit-filter': 'grayscale(100%)',
+      'filter': 'grayscale(100%)'
+    });
 
     // Apply custom CSS to the logotype
-    $("#impLogotype").css({ "position": "relative", "display": "none", "float": "left", "width": "200px", "padding": "2px 5px", "box-sizing": "content-box", "cursor": "pointer" });
+    $('#impLogotype').css({
+      'position': 'relative',
+      'display': 'none',
+      'float': 'left',
+      'width': '200px',
+      'padding': '2px 5px',
+      'box-sizing': 'content-box',
+      'cursor': 'pointer'
+    });
     
     // Apply so event listeners, in order to make some effects
-    $("#impWrapper")
+    $('#impWrapper')
 
     // On enter, show the background, hide logo and show logotype
-      .on("mouseenter", function () {
-        $(this).css("background", "rgba(255,255,255,0.6)");
-        $("#impLogo").hide();
-        $("#impLogotype").show();
+      .on('mouseenter', function () {
+        $(this).css('background', 'rgba(255,255,255,0.6)');
+        $('#impLogo').hide();
+        $('#impLogotype').show();
 
       // On leave, hide the background, hide logotype and show logo
-      }).on("mouseleave", function () {
-        $(this).css("background", "transparent");
-        $("#impLogo").show();
-        $("#impLogotype").hide();
+      }).on('mouseleave', function () {
+        $(this).css('background', 'transparent');
+        $('#impLogo').show();
+        $('#impLogotype').hide();
 
       // On click, go to ImperdibleSoft.com
-      }).on("click", function () {
-        var newWindow = window.open(u, "ImperdibleSoft");
+      }).on('click', function () {
+        var newWindow = window.open(url, 'ImperdibleSoft');
       });
   }
 })();
