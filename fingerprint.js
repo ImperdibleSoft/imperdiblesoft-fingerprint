@@ -7,7 +7,7 @@
     'my-teamup.com',
     'mypetcard.com.ar',
 
-    'dubrovnikaparts.com.ar'
+    'dubrovnikaparts.com'
   ];
 
   for (var y in publicDomains) {
@@ -27,7 +27,7 @@
     var text = '';
 
     document.addEventListener('keyup', function (e) {
-      switch (c) {
+      switch (text) {
         case '':
           if (e.keyCode == 73) {
             text = 'i';
@@ -38,7 +38,7 @@
 
         case 'i':
           if (e.keyCode == 77) {
-            text = 'im';
+            text += 'm';
           } else {
             text = '';
           }
@@ -46,7 +46,7 @@
 
         case 'im':
           if (e.keyCode == 80) {
-            text = 'imp';
+            text += 'p';
           } else {
             text = '';
           }
@@ -54,7 +54,7 @@
 
         case 'imp':
           if (e.keyCode == 69) {
-            text = 'impe';
+            text += 'e';
           } else {
             text = '';
           }
@@ -62,7 +62,7 @@
 
         case 'impe':
           if (e.keyCode == 82) {
-            text = 'imper';
+            text += 'r';
           } else {
             text = '';
           }
@@ -70,7 +70,7 @@
 
         case 'imper':
           if (e.keyCode == 68) {
-            text = 'imperd';
+            text += 'd';
           } else {
             text = '';
           }
@@ -78,7 +78,7 @@
 
         case 'imperd':
           if (e.keyCode == 73) {
-            text = 'imperdi';
+            text += 'i';
           } else {
             text = '';
           }
@@ -86,7 +86,7 @@
 
         case 'imperdi':
           if (e.keyCode == 66) {
-            text = 'imperdib';
+            text += 'b';
           } else {
             text = '';
           }
@@ -94,7 +94,7 @@
 
         case 'imperdib':
           if (e.keyCode == 76) {
-            text = 'imperdibl';
+            text += 'l';
           } else {
             text = '';
           }
@@ -102,7 +102,7 @@
 
         case 'imperdibl':
           if (e.keyCode == 69) {
-            text = 'imperdible';
+            text += 'e';
           } else {
             text = '';
           }
@@ -110,7 +110,7 @@
 
         case 'imperdible':
           if (e.keyCode == 83) {
-            text = 'imperdibles';
+            text += 's';
           } else {
             text = '';
           }
@@ -118,7 +118,7 @@
 
         case 'imperdibles':
           if (e.keyCode == 79) {
-            text = 'imperdibleso';
+            text += 'o';
           } else {
             text = '';
           }
@@ -126,7 +126,7 @@
 
         case 'imperdibleso':
           if (e.keyCode == 70) {
-            text = 'imperdiblesof';
+            text += 'f';
           } else {
             text = '';
           }
@@ -134,7 +134,7 @@
 
         case 'imperdiblesof':
           if (e.keyCode == 84) {
-            text = 'imperdiblesoft';
+            text += 't';
           } else {
             text = '';
           }
